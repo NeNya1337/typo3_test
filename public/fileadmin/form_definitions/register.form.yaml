@@ -1,0 +1,64 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: register
+label: register
+prototypeName: standard
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: Step
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Username
+        properties:
+          elementDescription: 'Type your username here'
+          fluidAdditionalAttributes:
+            placeholder: 'John Smith'
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'You have to choose a username'
+            -
+              code: 1221560718
+              message: 'You have to choose a username'
+            -
+              code: 1347992400
+              message: 'You have to choose a username'
+            -
+              code: 1347992453
+              message: 'You have to choose a username'
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: Alphanumeric
+      -
+        defaultValue: ''
+        validators:
+          -
+            identifier: EmailAddress
+        type: Email
+        identifier: email-1
+        label: 'Email address'
+      -
+        defaultValue: ''
+        type: Password
+        identifier: password-1
+        label: Password
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: SummaryPage
+    identifier: summarypage-1
+    label: 'Summary step'
