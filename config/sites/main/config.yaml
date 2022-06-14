@@ -1,5 +1,4 @@
 base: 'https://typo3.ddev.site:8443/'
-errorHandling: {  }
 languages:
   -
     title: English
@@ -14,4 +13,4 @@ languages:
     direction: ltr
     flag: us
 rootPageId: 1
-routes: {  }
+websiteTitle: ''

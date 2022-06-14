@@ -1,0 +1,35 @@
+page = PAGE
+
+page {
+  meta {
+  author = NeNya1337
+  viewport = width=device-width, initial-scale=1
+}
+includeJS {
+  10 = fileadmin/myextension/bootstrap.bundle.min.js
+}
+includeCSS {
+  10 = fileadmin/myextension/bootstrap.min.css
+}
+
+10 = TEXT
+
+70 = HMENU
+70 {
+  wrap = <nav class="navbar navbar-expand-lg bg-light">  <div class="container-fluid">|</div></nav>
+  1 = TMENU
+  1.wrap = <div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav me-auto mb-2 mb-lg-0">|</ul></div>
+  1.NO.wrapItemAndSub = <li class="nav-item">|</li>
+  1.expAll = 1
+  #2 < .1
+}
+100 = CONTENT
+100 {
+  wrap = <div class="mt-5 container">|</div>
+  table = tt_content
+  select {
+  orderBy = sorting
+  where = {#colPos}=0
+}
+}
+}

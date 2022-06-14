@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e38d3aed3f17f9ee095a3ffe43711bd",
+    "content-hash": "de525d68fa7e644e76771a6885f11f79",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1457,6 +1457,42 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.7.5"
             },
             "time": "2021-07-01T14:25:37+00:00"
+        },
+        {
+            "name": "nenya/mlt3test",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "extensions/mlt3test",
+                "reference": "26cb0b54dae08b912d7f0e959602a03da582dd23"
+            },
+            "require": {
+                "typo3/cms-core": "^11.5",
+                "typo3/cms-fluid-styled-content": "^11.5",
+                "typo3/cms-rte-ckeditor": "^11.5"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "mlt3test"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nenya\\Mlt3test\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "homepage": "https://github.com/NeNya1337",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "nikic/php-parser",
@@ -6946,7 +6982,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "nenya/mlt3test": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
@@ -6954,5 +6992,5 @@
     "platform-overrides": {
         "php": "7.4.1"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }

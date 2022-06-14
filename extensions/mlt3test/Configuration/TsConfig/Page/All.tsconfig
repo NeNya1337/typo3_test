@@ -1,0 +1,7 @@
+#
+# PageTS for MLT3Test
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:mlt3test/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:mlt3test/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:mlt3test/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:mlt3test/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
